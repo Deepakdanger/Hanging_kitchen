@@ -1,24 +1,25 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const Lists = () => {
   const [state, setState] = useState([]);
-
-  useEffect(() => {
-    fetch(url)
-      .then((resp) => resp.json())
-      .then((data) => dataChange(data),
-        // Note: it's important to handle errors here
-        // instead of a catch() block so that we don't swallow
-        // exceptions from actual bugs in components.
-        (error) => {
-          console.log(error);
-        });
-  }, []);
 
   const dataChange = (data) => {
     console.log(data);
     setState(data);
   };
+  const url = 'www.themealdb.com/api/json/v1/1/categories.php';
+
+  useEffect(() => {
+    fetch(url)
+      .then((resp) => {
+        resp.json();
+      })
+      .then((data) => dataChange(data),
+        (error) => {
+          console.log(error);
+          console.warn(error.responseText);
+        });
+  }, []);
 
   return (
     <div className="lists">
