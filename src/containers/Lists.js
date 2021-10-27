@@ -8,8 +8,6 @@ const Lists = () => {
 
   const dataChange = (data) => {
     setItems(data);
-    console.log(data);
-    console.log(items);
   };
   const url = 'https://www.themealdb.com/api/json/v1/1/categories.php';
 
