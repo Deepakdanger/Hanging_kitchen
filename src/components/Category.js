@@ -11,6 +11,7 @@ const Catagory = ({ ele, selectCategory }) => {
     </div>
   );
 };
+
 Catagory.propTypes = {
   ele: PropTypes.shape({
     idCategory: PropTypes.string,

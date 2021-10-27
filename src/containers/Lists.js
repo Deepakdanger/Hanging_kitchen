@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-import Catagory from './Category';
+import Catagory from '../components/Category';
 import { selectCategoryAction } from '../actions';
 
 const Lists = () => {
