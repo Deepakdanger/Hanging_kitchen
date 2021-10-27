@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import Catagory from './Category;
+import { useDispatch } from 'react-redux';
+import Catagory from './Category';
+import { selectCategoryAction } from '../actions';
 
 const Lists = () => {
   const [items, setItems] = useState([]);
@@ -11,6 +13,8 @@ const Lists = () => {
   };
   const url = 'https://www.themealdb.com/api/json/v1/1/categories.php';
 
+  const dispatch = useDispatch();
+
   useEffect(() => {
     fetch(url)
       .then((resp) => resp.json())
@@ -21,15 +25,16 @@ const Lists = () => {
         console.log(error);
       });
   }, []);
-  console.log(items);
 
-  const printCategory = items.categories.map((ele) => (<Catagory key={`ele-${ele.idCategory}`} ele={ele} />));
+  const selectCategoryMenu = (ele) => dispatch(selectCategoryAction(ele));
+
+  const printCategory = items.categories ? items.categories.map((ele) => (<Catagory key={`ele-${ele.idCategory}`} ele={ele} selectCategory={() => selectCategoryMenu(ele)} />)) : <p>hellllllo</p>;
 
   return (
     <div className="lists">
       hello
       Lists of food
-      {items.categories ? { printCategory } : <p>click</p>}
+      {items.categories ? printCategory : <p>click</p>}
     </div>
   );
 };
