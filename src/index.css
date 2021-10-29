@@ -1,45 +1,115 @@
 .nav1 {
-    width: 100%;
-    height: 6rem;
-    background-color: rgb(223, 226, 35);
-    display: flex;
+  width: 100%;
+  height: 6rem;
+  background-color: rgb(85, 5, 5);
+  display: flex;
+  color: blanchedalmond;
+  border-bottom: white 5px double;
 }
 
-.logo11 {
-    width: 40%;
-    display: flex;
-    justify-content: center;
-    background-color: cornflowerblue;
+.nav_title1 {
+  font-family: cursive;
+  display: flex;
+  margin-left: 16rem;
+}
+
+.nav_title2 {
+  display: flex;
+  position: relative;
+}
+
+.title {
+  display: flex;
+  position: absolute;
+  left: -130%;
+}
+
+.glow {
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow:
+      0 0 10px rgb(236, 236, 236),
+      0 0 20px rgb(218, 159, 159),
+      0 0 30px #df6c57,
+      0 0 40px #db4520,
+      0 0 50px #e41313,
+      0 0 60px #f50505,
+      0 0 70px #ff1100;
+  }
+
+  to {
+    text-shadow: 0 0 20px rgb(221, 221, 221);
+  }
+}
+
+.pro {
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+  text-shadow:
+    0 0 5px rgb(245, 230, 230),
+    0 0 10px #e92300;
+}
+
+.pro1 {
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-shadow:
+    0 0 5px rgb(255, 255, 255),
+    0 0 10px rgb(228, 146, 146),
+    0 0 15px rgb(240, 88, 88),
+    0 0 20px rgb(224, 0, 0);
+}
+
+.rotated {
+  animation: rotation 1.8s ease-in-out  infinite alternate;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(-40deg);
+  }
+
+  to {
+    transform: rotate(5deg);
+  }
 }
 
 .right {
-    display: flex;
+  display: flex;
 }
 
 .data {
-    margin-left: 3rem;
-    display: flex;
-    justify-content: center;
-    float: right;
+  margin-left: 3rem;
+  display: flex;
+  justify-content: center;
+  float: right;
 }
 
 .lists {
-    width: auto;
-    height: auto;
-    background-color: rgb(0, 0, 0);
-    display: grid;
-    grid-template-columns: 24.9% 24.9% 24.9% 24.9%;
-    padding: 10px;
+  width: auto;
+  height: auto;
+  background-color: rgb(0, 0, 0);
+  display: grid;
+  grid-template-columns: 24.9% 24.9% 24.9% 24.9%;
+  padding: 10px;
 }
 
 .category_list {
-    padding: 0.2rem;
-    border: rgb(241, 241, 241) 1px solid;
-    border-radius: 8%;
+  padding: 0.2rem;
+  border: rgb(241, 241, 241) 1px solid;
+  border-radius: 8%;
 }
 
 .category_img {
-    width: 100%;
+  width: 100%;
 }
 
 .category_name {
@@ -55,31 +125,31 @@
 }
 
 .meals {
-    background-color: black;
-    width: 100%;
-    height: auto;    
+  background-color: black;
+  width: 100%;
+  height: auto;
 }
 
 .meals_title {
-    color: white;
-    font-size: xx-large;
-    font-family: cursive;
-    margin-left: 2rem;
+  color: white;
+  font-size: xx-large;
+  font-family: cursive;
+  margin-left: 2rem;
 }
 
 .meals_discription {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    padding: 0.2rem;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  padding: 0.2rem;
 }
 
 .meals_dish {
-    padding: 1rem;
-    border: rgb(241, 241, 241) 1px solid;
-    border-radius: 8%;
+  padding: 1rem;
+  border: rgb(241, 241, 241) 1px solid;
+  border-radius: 8%;
 }
 
 .meals_img {
-    width: 100%;
-    height: 80%;
+  width: 100%;
+  height: 80%;
 }
