@@ -22,3 +22,34 @@
     justify-content: center;
     float: right;
 }
+
+.lists {
+    width: auto;
+    height: auto;
+    background-color: rgb(0, 0, 0);
+    display: grid;
+    grid-template-columns: 24.9% 24.9% 24.9% 24.9%;
+    padding: 10px;
+}
+
+.category_list {
+    padding: 0.2rem;
+    border: rgb(241, 241, 241) 1px solid;
+    border-radius: 8%;
+}
+
+.category_img {
+    width: 100%;
+}
+
+.category_name {
+  margin-bottom: 5px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border: none;
+  font-size: x-large;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

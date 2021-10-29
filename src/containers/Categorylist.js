@@ -29,10 +29,14 @@ const Categorylist = () => {
   const categoryFood = categoryItems.meals ? categoryItems.meals.map((ele) => (<Catagoryfood key={`ele-${ele.idMeal}`} ele={ele} selectFood={() => selectFoodMenu(ele)} />)) : <p>hello111</p>;
 
   return (
-    <div>
-      list
-      {category}
-      {categoryFood}
+    <div className="meals">
+      <p className="meals_title">
+        List of Meals :
+        {category}
+      </p>
+      <div className="meals_discription">
+        {categoryFood}
+      </div>
     </div>
   );
 };

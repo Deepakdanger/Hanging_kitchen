@@ -2,19 +2,20 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Catagoryfood = ({ ele, selectFood }) => {
-  const { idMeal, strMeal } = ele;
+  const { strMealThumb, strMeal } = ele;
   return (
-    <div>
-      <span>{idMeal}</span>
-      <span>{strMeal}</span>
-      <button className="select" type="button" onClick={selectFood}>Select</button>
+    <div className="meals_dish">
+      <div className="meals_img_div">
+        <img className="meals_img" src={strMealThumb} alt="NA" />
+      </div>
+      <button className="meals_name" type="button" onClick={selectFood}>{strMeal}</button>
     </div>
   );
 };
 
 Catagoryfood.propTypes = {
   ele: PropTypes.shape({
-    idMeal: PropTypes.string,
+    strMealThumb: PropTypes.string,
     strMeal: PropTypes.string,
   }),
   selectFood: PropTypes.func.isRequired,
@@ -22,7 +23,7 @@ Catagoryfood.propTypes = {
 
 Catagoryfood.defaultProps = {
   ele: PropTypes.shape({
-    idMeal: '1',
+    strMealThumb: '1',
     strMeal: 'fhfh',
   }),
 };
