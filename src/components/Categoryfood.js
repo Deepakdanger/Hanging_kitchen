@@ -8,7 +8,7 @@ const Catagoryfood = ({ ele, selectFood }) => {
       <div className="meals_img_div">
         <img className="meals_img" src={strMealThumb} alt="NA" />
       </div>
-      <button className="meals_name" type="button" onClick={selectFood}>{strMeal}</button>
+      <button className="category_name" type="button" onClick={selectFood}>{strMeal}</button>
     </div>
   );
 };
