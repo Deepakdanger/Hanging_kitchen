@@ -1,0 +1,24 @@
+.nav1 {
+    width: 100%;
+    height: 6rem;
+    background-color: rgb(223, 226, 35);
+    display: flex;
+}
+
+.logo11 {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    background-color: cornflowerblue;
+}
+
+.right {
+    display: flex;
+}
+
+.data {
+    margin-left: 3rem;
+    display: flex;
+    justify-content: center;
+    float: right;
+}

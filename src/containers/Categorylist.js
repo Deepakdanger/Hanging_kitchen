@@ -18,7 +18,6 @@ const Categorylist = () => {
       .then((resp) => resp.json())
       .then((data) => {
         setCategoryItems(data);
-        console.log(url + category);
       },
       (error) => {
         console.log(error);

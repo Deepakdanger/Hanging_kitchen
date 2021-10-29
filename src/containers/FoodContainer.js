@@ -10,14 +10,9 @@ const FoodContainer = () => {
 
   useEffect(() => {
     fetch(url + food)
-      .then((resp) => {
-        console.log(resp);
-        return resp.json();
-      })
+      .then((resp) => resp.json())
       .then((data) => {
         setFoodItems(data.meals);
-        console.log(url + food);
-        console.log(data);
       },
       (error) => {
         console.log(error);

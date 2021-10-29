@@ -30,8 +30,6 @@ const Lists = () => {
 
   return (
     <div className="lists">
-      hello
-      Lists of food
       {items.categories ? printCategory : <p>click</p>}
     </div>
   );
