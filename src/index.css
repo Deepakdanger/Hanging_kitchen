@@ -81,6 +81,56 @@
   display: flex;
 }
 
+.data {
+  margin-left: 3rem;
+  display: flex;
+  justify-content: center;
+  float: right;
+}
+.listss {
+  height: 65rem;
+  width: 100%;
+  background-color: rgb(238, 107, 14);
+  position: relative;
+}
+
+.select1 {
+  font-size: .1px;
+  padding-top: 10px;
+} 
+.select2 {
+  font-size: 6rem;
+  color: rgb(58, 29, 3);
+  margin-top: -10px;
+}
+.select3 {
+  font-size: 6rem;
+  color: rgb(58, 29, 3);
+  margin-top: -20px;
+}
+
+.lists {
+  position: absolute;
+  top: 0%;
+  width: auto;
+  height: auto;
+  display: grid;
+  grid-template-columns: 24.9% 24.9% 24.9% 24.9%;
+  padding: 10px;
+  background-color: black;
+  animation: ztrans 15s ease normal forwards;
+}
+
+@keyframes ztrans {
+  from {
+    -webkit-transform: perspective(300) rotateY(0deg);
+    -webkit-transform-origin: 90% 90%;
+ }
+ to {
+    -webkit-transform: perspective(300) rotateY(-5deg);
+     -webkit-transform-origin: 90% 90%;
+ }
+}
 
 
 .category_list {
