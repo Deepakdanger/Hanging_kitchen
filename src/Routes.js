@@ -2,13 +2,14 @@ import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import App from './components/App';
 import Navbar from './components/Navbar';
+import FoodContainer from './containers/FoodContainer';
 
 const Routes = () => (
   <BrowserRouter>
     <Navbar />
     <Switch>
-      <Route exact path="/" component={App} />
-      <Route path="/calculator" component={App} />
+      <Route exact path="/ader" component={App} />
+      <Route path="/" component={FoodContainer} />
     </Switch>
   </BrowserRouter>
 
