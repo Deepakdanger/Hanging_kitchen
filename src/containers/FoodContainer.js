@@ -18,7 +18,6 @@ const FoodContainer = () => {
         console.log(error);
       });
   }, [food]);
-  console.log(foodItems);
 
   const printFood = foodItems ? foodItems.map((ele) => (<Food key={`ele-${ele.idMeal}`} ele={ele} />)) : <p>hellllllo</p>;
 
@@ -26,7 +25,6 @@ const FoodContainer = () => {
     <div>
       FoooD
       {food}
-      {console.log(printFood)}
       {foodItems ? printFood : <p>click</p>}
     </div>
   );
