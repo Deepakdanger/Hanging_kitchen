@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const Catagory = ({ ele, selectCategory }) => {
   const { strCategoryThumb, strCategory } = ele;
   return (
-    <div className="category_list">
+    <div className="category_list swing">
       <img className="category_img" src={strCategoryThumb} alt="NA" />
       <button className="category_name" type="button" onClick={selectCategory}>{strCategory}</button>
     </div>

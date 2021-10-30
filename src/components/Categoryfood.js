@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const Catagoryfood = ({ ele, selectFood }) => {
   const { strMealThumb, strMeal } = ele;
   return (
-    <div className="meals_dish">
+    <div className="meals_dish swing">
       <div className="meals_img_div">
         <img className="meals_img" src={strMealThumb} alt="NA" />
       </div>

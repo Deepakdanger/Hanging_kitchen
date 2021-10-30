@@ -29,8 +29,15 @@ const Lists = () => {
   const printCategory = items.categories ? items.categories.map((ele) => (<Catagory key={`ele-${ele.idCategory}`} ele={ele} selectCategory={() => selectCategoryMenu(ele)} />)) : <p>hellllllo</p>;
 
   return (
-    <div className="lists">
-      {items.categories ? printCategory : <p>click</p>}
+    <div className="listss">
+      <p className="select1">Select Category</p>
+      <p className="select3">SELECT CATEGORY </p>
+      <p className="select2">FROM</p>
+      <p className="select2">HERE</p>
+      <p className="select2">= = = &gt; </p>
+      <div className="lists">
+        {items.categories ? printCategory : <p>click</p>}
+      </div>
     </div>
   );
 };
