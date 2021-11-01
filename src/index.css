@@ -281,8 +281,8 @@
 }
 
 .food_img {
-  width: 100%;
-  height: 25rem;
+  width: 110%;
+  height: 28rem;
   border: rgb(0, 0, 0) 2px solid;
   position: relative;
 }
