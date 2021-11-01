@@ -121,6 +121,7 @@
   padding: 10px;
   background-color: black;
   animation: ztrans 15s ease normal forwards;
+  border-radius: 2%;
 }
 
 @keyframes ztrans {
@@ -138,7 +139,7 @@
 .category_list {
   padding: 0.2rem;
   border: rgb(241, 241, 241) 1px solid;
-  border-radius: 8%;
+  border-radius: 20%;
 }
 
 .category_img {
@@ -147,7 +148,7 @@
 
 .category_name {
   margin-bottom: 5px;
-  background-color: rgb(0, 0, 0);
+  background-color: transparent;
   color: white;
   width: 100%;
   display: flex;
@@ -265,4 +266,34 @@
 @keyframes swing {
   0% { transform: rotate(3deg); }
   100% { transform: rotate(-3deg); }
+}
+
+.food {
+  width: auto;
+  height: auto;
+  display: flex;
+}
+
+.food_discription {
+  width: 60%;
+  font-size: 1.5rem;
+  font-family: cursive;
+}
+
+.food_img {
+  width: 100%;
+  height: 25rem;
+  border: rgb(0, 0, 0) 2px solid;
+  position: relative;
+}
+
+.food_img img {
+  width: 100%;
+  height: 100%;
+}
+
+.food_video video {
+  width: 100%;
+  height: 100%;
+  border: rgb(0, 0, 0) 2px solid;
 }

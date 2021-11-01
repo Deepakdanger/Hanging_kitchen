@@ -9,30 +9,34 @@ const Food = ({ ele }) => {
   const url = strMealThumb.replace(/^\+/i, '');
 
   return (
-    <div>
-      <p>
-        Food Name:
-        {strMeal}
-      </p>
-      <p>
-        Category:
-        {strCategory}
-      </p>
-      <p>
-        Area:
-        {strArea}
-      </p>
-      <p>
-        Youtube Link
-        {strYoutube}
-      </p>
-      <p>
-        Instruction :
-        {strInstructions}
-      </p>
-      <p>
-        <img src={url} alt=" " />
-      </p>
+    <div className="food">
+      <div className="food_discription">
+        <p>
+          Food Name :
+          {strMeal}
+        </p>
+        <p>
+          Category :
+          {strCategory}
+        </p>
+        <p>
+          Area :
+          {strArea}
+        </p>
+        <p>
+          Youtube link :
+          <a href={strYoutube}>{strYoutube}</a>
+        </p>
+        <p>
+          Instruction :
+          {strInstructions}
+        </p>
+      </div>
+      <div className="food_url_discription">
+        <p className="food_img">
+          <img src={url} alt=" " />
+        </p>
+      </div>
     </div>
   );
 };

@@ -23,8 +23,6 @@ const FoodContainer = () => {
 
   return (
     <div>
-      FoooD
-      {food}
       {foodItems ? printFood : <p>click</p>}
     </div>
   );

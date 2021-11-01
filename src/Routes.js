@@ -8,7 +8,7 @@ const Routes = () => (
   <BrowserRouter>
     <Navbar />
     <Switch>
-      <Route exact path="/ader" component={App} />
+      <Route exact path="/sacas" component={App} />
       <Route path="/" component={FoodContainer} />
     </Switch>
   </BrowserRouter>
