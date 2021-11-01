@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 const Catagoryfood = ({ ele, selectFood }) => {
   const { strMealThumb, strMeal } = ele;
@@ -8,7 +9,9 @@ const Catagoryfood = ({ ele, selectFood }) => {
       <div className="meals_img_div">
         <img className="meals_img" src={strMealThumb} alt="NA" />
       </div>
-      <button className="category_name" type="button" onClick={selectFood}>{strMeal}</button>
+      <Link to="/food">
+        <button className="category_name" type="button" onClick={selectFood}>{strMeal}</button>
+      </Link>
     </div>
   );
 };

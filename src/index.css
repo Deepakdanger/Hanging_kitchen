@@ -7,6 +7,10 @@
   border-bottom: double rgb(255, 255, 255) 2px;
 }
 
+Link {
+  text-decoration: none;
+}
+
 .nav_title1 {
   font-family: cursive;
   display: flex;
@@ -77,7 +81,9 @@
 }
 
 .right {
-  display: flex;
+  margin-left: 45rem;
+  font-size: 2.5rem;
+  margin-top: 1rem;
 }
 
 .data {
@@ -85,6 +91,7 @@
   display: flex;
   justify-content: center;
   float: right;
+  color: white;
 }
 
 .listss {
@@ -162,6 +169,7 @@
   background-color: black;
   width: 100%;
   height: auto;
+  margin-top: -18px;
 }
 
 .meals_title {
