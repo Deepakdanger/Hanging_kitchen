@@ -33,11 +33,11 @@ All code below are for a terminal.
 
 1. Clone repository: 
 ```sh
-  $ git clone https://github.com/Deepakdanger/mamas_kitchen.git
+  $ git clone https://github.com/Deepakdanger/Hanging_kitchen.git
 ```
 2. Change directory inside project
 ```sh
-cd mamas_kitchen
+cd Hanging_kitchen
 ```
 3. In your terminal, run 
 ```sh
