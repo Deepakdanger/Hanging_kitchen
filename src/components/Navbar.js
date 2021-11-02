@@ -17,7 +17,7 @@ const Navbar = () => (
     </div>
     <p className="right">
       <Link to="/">
-        <p className="data">Home</p>
+        <span className="data">Home</span>
       </Link>
     </p>
   </nav>

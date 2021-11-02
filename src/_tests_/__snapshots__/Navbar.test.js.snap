@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Nav with router Nav snapshot testing 1`] = `
+<nav
+  className="nav1"
+>
+  <div
+    className="nav_title1"
+  >
+    <div
+      className="nav_title2"
+    >
+      <div
+        className="title swing1"
+      >
+        <h1
+          className="pro"
+        >
+          Han
+        </h1>
+        <h1
+          className="glow"
+        >
+          gin
+        </h1>
+        <h1
+          className="pro"
+        >
+          g
+        </h1>
+      </div>
+      <div>
+        <h1
+          className="pro1"
+        >
+          Kitchen
+        </h1>
+      </div>
+    </div>
+  </div>
+  <p
+    className="right"
+  >
+    <a
+      href="/"
+      onClick={[Function]}
+    >
+      <span
+        className="data"
+      >
+        Home
+      </span>
+    </a>
+  </p>
+</nav>
+`;
