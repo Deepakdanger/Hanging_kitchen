@@ -13,12 +13,12 @@ describe('Testing Filter with static router', () => {
     expect(component).toBeDefined();
   });
 
-  it('Filter snapshot testing', () => {
-    const tree = renderer.create(
+  it('Category snapshot testing', () => {
+    const category = renderer.create(
       <StaticRouter>
         <Category ele={{}} selectCategory={jest.fn()} />
       </StaticRouter>,
     ).toJSON();
-    expect(tree).toMatchSnapshot();
+    expect(category).toMatchSnapshot();
   });
 });

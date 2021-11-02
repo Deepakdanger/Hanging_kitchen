@@ -6,8 +6,6 @@ const Food = ({ ele }) => {
     strMeal, strCategory, strArea, strInstructions, strYoutube, strMealThumb,
   } = ele;
 
-  const url = strMealThumb.replace(/^\+/i, '');
-
   return (
     <div className="food">
       <div className="food_discription">
@@ -34,7 +32,7 @@ const Food = ({ ele }) => {
       </div>
       <div className="food_url_discription">
         <p className="food_img">
-          <img src={url} alt=" " />
+          <img src={strMealThumb} alt=" " />
         </p>
       </div>
     </div>

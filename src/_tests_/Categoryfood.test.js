@@ -4,7 +4,7 @@ import { StaticRouter } from 'react-router-dom';
 import Catagoryfood from '../components/Categoryfood';
 
 describe('Testing Filter with static router', () => {
-  it('Category component is defined', async () => {
+  it('Categoryfood component is defined', async () => {
     const component = render(
       <StaticRouter>
         <Catagoryfood ele={{}} selectFood={jest.fn()} />
@@ -13,12 +13,12 @@ describe('Testing Filter with static router', () => {
     expect(component).toBeDefined();
   });
 
-  it('Filter snapshot testing', () => {
-    const tree = renderer.create(
+  it('Categoryfood snapshot testing', () => {
+    const categoryfood = renderer.create(
       <StaticRouter>
         <Catagoryfood ele={{}} selectFood={jest.fn()} />
       </StaticRouter>,
     ).toJSON();
-    expect(tree).toMatchSnapshot();
+    expect(categoryfood).toMatchSnapshot();
   });
 });

@@ -1,24 +1,24 @@
 import renderer from 'react-test-renderer';
 import { render } from '@testing-library/react';
 import { StaticRouter } from 'react-router-dom';
-import Navbar from '../components/Navbar';
+import Food from '../components/Food';
 
-describe('Testing Nav with router', () => {
-  it('Navbar component is defined', async () => {
+describe('Testing Filter with static router', () => {
+  it('Food component is defined', async () => {
     const component = render(
       <StaticRouter>
-        <Navbar />
+        <Food ele={{}} />
       </StaticRouter>,
     );
     expect(component).toBeDefined();
   });
 
-  it('Navbar snapshot testing', () => {
-    const nav = renderer.create(
+  it('Food snapshot testing', () => {
+    const food = renderer.create(
       <StaticRouter>
-        <Navbar />
+        <Food ele={{}} />
       </StaticRouter>,
     ).toJSON();
-    expect(nav).toMatchSnapshot();
+    expect(food).toMatchSnapshot();
   });
 });
