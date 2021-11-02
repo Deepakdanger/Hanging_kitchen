@@ -7,7 +7,7 @@
   border-bottom: double rgb(255, 255, 255) 2px;
 }
 
-Link {
+link {
   text-decoration: none;
 }
 
@@ -133,12 +133,12 @@ Link {
 
 @keyframes ztrans {
   from {
-    -webkit-transform: perspective(300) rotateY(0deg);
+    -webkit-transform: perspective(300px) rotateY(0deg);
     -webkit-transform-origin: 90% 90%;
   }
 
   to {
-    -webkit-transform: perspective(300) rotateY(-5deg);
+    -webkit-transform: perspective(300px) rotateY(-5deg);
     -webkit-transform-origin: 90% 90%;
   }
 }
