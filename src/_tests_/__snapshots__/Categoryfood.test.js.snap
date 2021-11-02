@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Filter with static router Filter snapshot testing 1`] = `
+<div
+  className="category_list swing"
+>
+  <img
+    alt="NA"
+    className="category_img"
+  />
+  <button
+    className="category_name"
+    type="button"
+  />
+</div>
+`;

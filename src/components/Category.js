@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Catagory = ({ ele, selectCategory }) => {
+const Category = ({ ele, selectCategory }) => {
   const { strCategoryThumb, strCategory } = ele;
   return (
     <div className="category_list swing">
@@ -11,7 +11,7 @@ const Catagory = ({ ele, selectCategory }) => {
   );
 };
 
-Catagory.propTypes = {
+Category.propTypes = {
   ele: PropTypes.shape({
     strCategoryThumb: PropTypes.string,
     strCategory: PropTypes.string,
@@ -19,11 +19,11 @@ Catagory.propTypes = {
   selectCategory: PropTypes.func.isRequired,
 };
 
-Catagory.defaultProps = {
+Category.defaultProps = {
   ele: PropTypes.shape({
     strCategoryThumb: '1',
     strCategory: 'fhfh',
   }),
 };
 
-export default Catagory;
+export default Category;

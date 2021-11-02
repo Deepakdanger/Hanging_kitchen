@@ -4,7 +4,7 @@ import App from '../components/App';
 import store from '../reducers/index';
 
 describe('Testing App with redux', () => {
-  it('App snapshot testing', () => {
+  it('App.js snapshot testing', () => {
     const app = renderer.create(
       <Provider store={store}>
         <App />

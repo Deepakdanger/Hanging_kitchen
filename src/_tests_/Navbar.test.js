@@ -4,7 +4,7 @@ import { StaticRouter } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 
 describe('Testing Nav with router', () => {
-  it('Nav is defined', async () => {
+  it('Navbar component is defined', async () => {
     const component = render(
       <StaticRouter>
         <Navbar />
