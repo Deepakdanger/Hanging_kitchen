@@ -1,43 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Testing Filter with static router Filter snapshot testing 1`] = `
-<div
-  className="food"
->
-  <div
-    className="food_discription"
-  >
-    <p>
-      Food Name :
-    </p>
-    <p>
-      Category :
-    </p>
-    <p>
-      Area :
-    </p>
-    <p>
-      Youtube link :
-      <a />
-    </p>
-    <p>
-      Instruction :
-    </p>
-  </div>
-  <div
-    className="food_url_discription"
-  >
-    <p
-      className="food_img"
-    >
-      <img
-        alt=" "
-      />
-    </p>
-  </div>
-</div>
-`;
-
 exports[`Testing Filter with static router Food snapshot testing 1`] = `
 <div
   className="food"

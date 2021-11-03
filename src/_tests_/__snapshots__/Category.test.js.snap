@@ -15,19 +15,3 @@ exports[`Testing Filter with static router Category snapshot testing 1`] = `
   />
 </div>
 `;
-
-exports[`Testing Filter with static router Filter snapshot testing 1`] = `
-<div
-  className="category_list swing"
->
-  <img
-    alt="NA"
-    className="category_img"
-  />
-  <button
-    className="category_name"
-    onClick={[MockFunction]}
-    type="button"
-  />
-</div>
-`;
