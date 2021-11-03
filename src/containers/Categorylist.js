@@ -11,7 +11,6 @@ const Categorylist = () => {
   const url = 'https://www.themealdb.com/api/json/v1/1/filter.php?c=';
 
   const dispatch = useDispatch();
-  //   ESLINT_NO_DEV_ERRORS=true
 
   useEffect(() => {
     fetch(url + category)
@@ -19,8 +18,8 @@ const Categorylist = () => {
       .then((data) => {
         setCategoryItems(data);
       },
-      (error) => {
-        console.log(error);
+      () => {
+
       });
   }, [category]);
 

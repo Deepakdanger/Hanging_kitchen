@@ -19,8 +19,7 @@ const Lists = () => {
       .then((data) => {
         dataChange(data);
       },
-      (error) => {
-        console.log(error);
+      () => {
       });
   }, []);
 

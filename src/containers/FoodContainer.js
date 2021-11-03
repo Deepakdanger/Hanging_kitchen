@@ -14,8 +14,8 @@ const FoodContainer = () => {
       .then((data) => {
         setFoodItems(data.meals);
       },
-      (error) => {
-        console.log(error);
+      () => {
+
       });
   }, [food]);
 
