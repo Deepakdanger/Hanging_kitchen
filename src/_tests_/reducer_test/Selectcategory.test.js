@@ -13,15 +13,8 @@ describe('SelectCategoryReducer function', () => {
       type: SELECT_CATEGORY,
       ele: { strCategory: 'Food' },
     };
-    expect(SelectCategoryReducer({}, action) === '').toBe(false);
-  });
-
-  it('should handle SELECT_CATEGORY', () => {
-    const action = {
-      type: SELECT_CATEGORY,
-      ele: { strCategory: 'Food' },
-    };
     const expectedState = 'Food';
+    expect(SelectCategoryReducer({}, action) === '').toBe(false);
     expect(SelectCategoryReducer({}, action)).toEqual(expectedState);
   });
 });
