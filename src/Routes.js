@@ -9,7 +9,7 @@ const Routes = () => (
     <Navbar />
     <Switch>
       <Route exact path="/" component={App} />
-      <Route exact path="/food" component={FoodContainer} />
+      <Route path="/food/" component={FoodContainer} />
     </Switch>
   </BrowserRouter>
 

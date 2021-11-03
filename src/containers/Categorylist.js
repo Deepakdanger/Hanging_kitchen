@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import Catagoryfood from '../components/Categoryfood';
+import Categoryfood from '../components/Categoryfood';
 import { selectFoodMenuAction } from '../actions';
 
 const Categorylist = () => {
@@ -25,7 +25,7 @@ const Categorylist = () => {
 
   const selectFoodMenu = (ele) => dispatch(selectFoodMenuAction(ele));
 
-  const categoryFood = categoryItems.meals ? categoryItems.meals.map((ele) => (<Catagoryfood key={`ele-${ele.idMeal}`} ele={ele} selectFood={() => selectFoodMenu(ele)} />)) : <p>hello111</p>;
+  const categoryFood = categoryItems.meals ? categoryItems.meals.map((ele) => (<Categoryfood key={`ele-${ele.idMeal}`} ele={ele} selectFood={() => selectFoodMenu(ele)} />)) : <p>hello111</p>;
 
   return (
     <div className="meals">

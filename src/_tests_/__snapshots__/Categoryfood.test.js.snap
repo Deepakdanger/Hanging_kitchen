@@ -13,7 +13,7 @@ exports[`Testing Filter with static router Categoryfood snapshot testing 1`] = `
     />
   </div>
   <a
-    href="/food"
+    href="/food/undefined"
     onClick={[Function]}
   >
     <button
