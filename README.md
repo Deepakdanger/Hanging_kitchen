@@ -1,6 +1,6 @@
 # Hanging Kitchen
-It is website about Hanging Kitchen which provide the catalogs of recipes . Here I fetch data from API Link.
-Here I've used different animation in css to improve my website UI framework.
+It is the website about Hanging Kitchen which provides catalogs of recipes. Here I fetch data from API Link.
+Here I've used different animation in CSS to improve my website UI framework.
 
 
  ![Home Screen](src/assets/img/pic1.PNG)
@@ -79,7 +79,3 @@ Give a ⭐️ if you like this project!
 - Hat tip to anyone whose code was used
 - Inspiration
 - etc
-
-## 📝 License
-
-This project is [MIT](/LICENSE) licensed.
